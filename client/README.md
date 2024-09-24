@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Country Info Client
 
-## Getting Started
+This is the frontend client for the Country Info application, built using Next.js, React, TypeScript, and Tailwind CSS. It displays a list of available countries and detailed information pages for each country, including population charts and border country details.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Environment Variables](#environment-variables)
+- [Running the Application](#running-the-application)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
+- [Deployment](#deployment)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Country List Page**: Displays a list of available countries with clickable links to detailed country info pages.
+- **Country Info Page**: Displays detailed information about the selected country, including:
+  - Country name and flag
+  - List of bordering countries with clickable links
+  - Population chart over time
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Prerequisites
 
-## Learn More
+Ensure you have the following installed on your development environment:
 
-To learn more about Next.js, take a look at the following resources:
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) (v6 or later)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/country-info-client.git
+   cd country-info-client
+2. **Install dependencies:**
+    ```bash
+    npm install
+3. **Setup Environment Variables: Create a .env.local file in the root directory of the project and add the following environment variable:**
+    ```bash
+    NEXT_PUBLIC_API_URL=http://localhost:7777/countries
+## Running the Application
+1. **Clone the repository:**
+   ```bash
+    npm run dev
+2. **Open `http://localhost:3000` in your browser to see the application.**
